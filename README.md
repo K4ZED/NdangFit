@@ -1,6 +1,6 @@
-# NDANGFIT - Aplikasi Monitoring Latihan Gym
+# NdangFit - Aplikasi Monitoring Latihan Gym
 
-Aplikasi **NDANGFIT** adalah solusi untuk memonitor dan mencatat perjalanan Anda dalam dunia gym. Aplikasi ini dirancang untuk membantu Anda melacak setiap sesi latihan, memantau perkembangan, dan memvisualisasikan data statistik untuk mencapai tujuan kebugaran Anda.
+Aplikasi **NdangFit** adalah solusi untuk memonitor dan mencatat perjalanan Anda dalam dunia gym. Aplikasi ini dirancang untuk membantu Anda melacak setiap sesi latihan, memantau perkembangan, dan memvisualisasikan data statistik untuk mencapai tujuan kebugaran Anda.
 
 ---
 

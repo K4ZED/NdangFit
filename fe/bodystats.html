@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NdangFit - Catat Statistik Tubuh</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>NdangFit</h1>
+        <nav>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="workout_log.html">Catat Latihan</a>
+            <a href="riwayat.html">Riwayat Latihan</a>
+            <a href="progress.html">Progress Latihan</a>
+            <a href="bodystats.html" class="active">Statistik Tubuh</a>
+            <a href="goals.html">Target</a>
+        </nav>
+        <button id="logout-button">Logout</button>
+    </header>
+
+    <main class="main-content">
+        <div class="content-container">
+            <h1>Statistik Tubuh</h1>
+            <div id="stat-message" class="message"></div>
+            
+            <form id="bodyStatForm">
+                <div class="form-group">
+                    <label for="weight">Berat (kg):</label>
+                    <input type="number" id="weight" step="0.1" min="0">
+                </div>
+                <div class="form-group">
+                    <label for="bodyFatPercent">Lemak Tubuh (%):</label>
+                    <input type="number" id="bodyFatPercent" step="0.1" min="0">
+                </div>
+                <div class="form-group">
+                    <label for="muscleMass">Massa Otot (kg):</label>
+                    <input type="number" id="muscleMass" step="0.1" min="0">
+                </div>
+                <div class="form-group">
+                    <label for="waistCircumference">Lingkar Pinggang (cm):</label>
+                    <input type="number" id="waistCircumference" step="0.1" min="0">
+                </div>
+                <button type="submit">Simpan Statistik</button>
+            </form>
+            
+            <hr>
+            
+            <h2>Riwayat Statistik</h2>
+            <ul id="stat-history-list">
+                </ul>
+        </div>
+    </main>
+    <script src="js/main.js"></script>
+</body>
+</html>

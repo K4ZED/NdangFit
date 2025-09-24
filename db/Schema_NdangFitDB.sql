@@ -1,0 +1,66 @@
+-- Users
+CREATE TABLE Users (
+    UserID INT PRIMARY KEY IDENTITY(1,1),
+    Username NVARCHAR(50) NOT NULL UNIQUE,
+    Email NVARCHAR(100) NOT NULL UNIQUE,
+    PasswordHash NVARCHAR(255) NOT NULL,
+    Role NVARCHAR(20) NOT NULL DEFAULT 'user',
+    CreatedAt DATETIME DEFAULT GETDATE()
+);
+
+-- Workout Library
+CREATE TABLE WorkoutLibrary (
+    ExerciseID INT PRIMARY KEY IDENTITY(1,1),
+    ExerciseName NVARCHAR(100) NOT NULL UNIQUE,
+    Category NVARCHAR(50) NULL,
+    Description NVARCHAR(500) NULL,
+    MediaURL NVARCHAR(255) NULL
+);
+
+-- Workouts
+CREATE TABLE Workouts (
+    WorkoutID INT PRIMARY KEY IDENTITY(1,1),
+    UserID INT NOT NULL,
+    ExerciseID INT NOT NULL,
+    Sets INT NOT NULL,
+    Reps INT NOT NULL,
+    Weight DECIMAL(6,2) NULL,
+    LogDate DATETIME DEFAULT GETDATE(),
+    FOREIGN KEY (UserID) REFERENCES Users(UserID) ON DELETE CASCADE,
+    FOREIGN KEY (ExerciseID) REFERENCES WorkoutLibrary(ExerciseID) ON DELETE CASCADE
+);
+
+-- Body Stats
+CREATE TABLE BodyStats (
+    StatID INT PRIMARY KEY IDENTITY(1,1),
+    UserID INT NOT NULL,
+    Weight DECIMAL(5,2) NULL,
+    BodyFatPercent DECIMAL(5,2) NULL,
+    MuscleMass DECIMAL(5,2) NULL,
+    WaistCircumference DECIMAL(5,2) NULL,
+    RecordedAt DATETIME DEFAULT GETDATE(),
+    FOREIGN KEY (UserID) REFERENCES Users(UserID) ON DELETE CASCADE
+);
+
+-- Goals
+CREATE TABLE Goals (
+    GoalID INT PRIMARY KEY IDENTITY(1,1),
+    UserID INT NOT NULL,
+    GoalType NVARCHAR(50) NOT NULL,
+    TargetValue DECIMAL(10,2) NOT NULL,
+    CurrentValue DECIMAL(10,2) NULL,
+    Deadline DATE NULL,
+    IsAchieved BIT DEFAULT 0,
+    CreatedAt DATETIME DEFAULT GETDATE(),
+    FOREIGN KEY (UserID) REFERENCES Users(UserID) ON DELETE CASCADE
+);
+
+-- Schedules
+CREATE TABLE Schedules (
+    ScheduleID INT PRIMARY KEY IDENTITY(1,1),
+    UserID INT NOT NULL,
+    Date DATE NOT NULL,
+    IsWorkoutDay BIT DEFAULT 1,
+    Notes NVARCHAR(255) NULL,
+    FOREIGN KEY (UserID) REFERENCES Users(UserID) ON DELETE CASCADE
+);

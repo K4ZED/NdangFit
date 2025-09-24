@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NdangFit - Catat Latihan</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>NdangFit</h1>
+        <nav>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="workout_log.html" class="active">Catat Latihan</a>
+            <a href="riwayat.html">Riwayat Latihan</a>
+            <a href="progress.html">Progress Latihan</a>
+            <a href="bodystats.html">Statistik Tubuh</a>
+            <a href="goals.html">Target</a>
+        </nav>
+        <button id="logout-button">Logout</button>
+    </header>
+
+    <main class="main-content">
+        <div class="content-container">
+            <h1>Catat Latihan Hari Ini</h1>
+            <form id="workoutForm">
+                <div class="form-group full-width">
+                    <label for="exerciseSelect">Nama Latihan:</label>
+                    <select id="exerciseSelect" required>
+                        <option value="">Pilih latihan...</option>
+                    </select>
+                </div>
+                <div class="form-group half-width">
+                    <label for="sets">Sets:</label>
+                    <input type="number" id="sets" min="1" required>
+                </div>
+                <div class="form-group half-width">
+                    <label for="reps">Reps:</label>
+                    <input type="number" id="reps" min="1" required>
+                </div>
+                <div class="form-group full-width">
+                    <label for="weight">Berat (kg):</label>
+                    <input type="number" id="weight" step="0.5" min="0">
+                </div>
+                <input type="submit" value="Catat Latihan">
+            </form>
+            <div id="log-message" class="message"></div>
+        </div>
+    </main>
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NdangFit - Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>NdangFit</h1>
+        <nav>
+            <a href="dashboard.html" class="active">Dashboard</a>
+            <a href="workout_log.html">Catat Latihan</a>
+            <a href="riwayat.html">Riwayat Latihan</a>
+            <a href="progress.html">Progress Latihan</a>
+            <a href="bodystats.html">Statistik Tubuh</a>
+            <a href="goals.html">Target</a>
+        </nav>
+        <button id="logout-button">Logout</button>
+    </header>
+
+    <main class="main-content dashboard-container">
+        <div class="content-container">
+            <h1>Dashboard</h1>
+            <p>Selamat datang kembali! Berikut ringkasan aktivitas kamu.</p>
+
+            <div class="dashboard-grid">
+                <div class="card">
+                    <h3>Total Latihan Dicatat</h3>
+                    <p id="totalWorkouts" class="metric-value">0</p>
+                </div>
+
+                <div class="card">
+                    <h3>Latihan Terakhir</h3>
+                    <p id="lastWorkout" class="metric-value">Belum ada data.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Berat Badan Terakhir</h3>
+                    <p id="latestWeight" class="metric-value">Belum ada data.</p>
+                </div>
+
+                <div class="card">
+                    <h3>Target Aktif</h3>
+                    <p id="activeGoal" class="metric-value">Belum ada data.</p>
+                </div>
+            </div>
+            
+            <hr>
+            
+            </div>
+    </main>
+    <script src="js/main.js"></script>
+</body>
+</html>

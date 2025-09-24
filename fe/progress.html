@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NdangFit - Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>NdangFit</h1>
+        <nav>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="workout_log.html">Catat Latihan</a>
+            <a href="riwayat.html">Riwayat Latihan</a>
+            <a href="progress.html" class="active">Progress Latihan</a>
+            <a href="bodystats.html">Statistik Tubuh</a>
+            <a href="goals.html">Target</a>
+        </nav>
+        <button id="logout-button">Logout</button>
+    </header>
+
+    <main class="main-content">
+        <div class="content-container">
+            <h1>Progress Tracker</h1>
+            <div class="progress-section">
+                <label for="exerciseSelect">Pilih Latihan:</label>
+                <select id="exerciseSelect" class="form-input"></select>
+                <div id="progressMessage" class="message"></div>
+                <canvas id="progressChart"></canvas>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -4,7 +4,7 @@ CREATE TABLE Users (
     Username NVARCHAR(50) NOT NULL UNIQUE,
     Email NVARCHAR(100) NOT NULL UNIQUE,
     PasswordHash NVARCHAR(255) NOT NULL,
-    Role NVARCHAR(20) NOT NULL DEFAULT 'user',
+    Role NVARCHAR(20) NOT NULL DEFAULT 'user', -- 'user' & 'admin'
     CreatedAt DATETIME DEFAULT GETDATE()
 );
 
@@ -13,8 +13,7 @@ CREATE TABLE WorkoutLibrary (
     ExerciseID INT PRIMARY KEY IDENTITY(1,1),
     ExerciseName NVARCHAR(100) NOT NULL UNIQUE,
     Category NVARCHAR(50) NULL,
-    Description NVARCHAR(500) NULL,
-    MediaURL NVARCHAR(255) NULL
+    Description NVARCHAR(500) NULL
 );
 
 -- Workouts

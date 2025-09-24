@@ -12,7 +12,6 @@ class User(Base):
     Username = Column(String(50), nullable=False, unique=True)
     Email = Column(String(100), nullable=False, unique=True)
     PasswordHash = Column(String(255), nullable=False)
-    ThemePreference = Column(String(10), default='light')
     CreatedAt = Column(DateTime, server_default=func.now())
 
     workouts = relationship("Workout", back_populates="user")

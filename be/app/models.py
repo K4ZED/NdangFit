@@ -26,7 +26,6 @@ class WorkoutLibrary(Base):
     ExerciseName = Column(String(100), nullable=False, unique=True)
     Category = Column(String(50), nullable=True)
     Description = Column(String(500), nullable=True)
-    MediaURL = Column(String(255), nullable=True)
     
     workouts = relationship("Workout", back_populates="exercise")
 

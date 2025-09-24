@@ -42,8 +42,8 @@ Pastikan Anda sudah menginstal **Python** dan **pip** di sistem Anda.
 
 1.  **Clone repositori ini**:
     ```bash
-    git clone [https://github.com/nama_user/nama_repo.git](https://github.com/nama_user/nama_repo.git)
-    cd nama_repo
+    git clone https://github.com/K4ZED/NdangFit.git
+    cd NdangFit
     ```
 
 2.  **Instal dependensi backend**:

@@ -1,4 +1,3 @@
-# backend/app/models.py
 from sqlalchemy import Column, Integer, String, ForeignKey, Date, DateTime, DECIMAL, func, SmallInteger
 from sqlalchemy.orm import relationship, declarative_base
 from sqlalchemy.sql import text

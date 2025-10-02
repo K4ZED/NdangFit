@@ -10,7 +10,6 @@ Aplikasi **NdangFit** adalah solusi untuk memonitor dan mencatat perjalanan Anda
 - **Progress Tracking**: Pantau perkembangan kekuatan dan daya tahan Anda dari waktu ke waktu.
 - **Statistik & Visualisasi**: Lihat grafik dan *chart* yang memvisualisasikan data latihan Anda, membantu Anda memahami pola dan kemajuan yang telah dicapai.
 - **Manajemen Tujuan**: Tetapkan target kebugaran dan lacak sejauh mana Anda telah mencapainya.
-- **Antarmuka Pengguna Intuitif**: Navigasi yang mudah dengan desain yang bersih untuk pengalaman pengguna yang optimal.
 
 ---
 

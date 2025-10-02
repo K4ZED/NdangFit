@@ -26,7 +26,6 @@ Proyek ini dibagi menjadi dua bagian utama: **Backend** (`be`) dan **Frontend** 
 - **`fe` (Frontend)**:
   - Berisi semua file *client-side* seperti HTML, CSS, dan JavaScript.
   - **`css/`**: Berisi file *styling* untuk tampilan aplikasi.
-  - **`images/`**: Direktori untuk semua aset gambar.
   - **`js/`**: Berisi *script* JavaScript untuk fungsionalitas interaktif.
   - File HTML seperti `dashboard.html`, `login.html`, dan `workout_log.html` menyediakan halaman-halaman utama aplikasi.
 

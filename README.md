@@ -64,3 +64,9 @@ Pastikan Anda sudah menginstal **Python** dan **pip** di sistem Anda.
 ## Kontribusi
 
 Kami menyambut setiap kontribusi! Jika Anda ingin berkontribusi pada proyek ini, silakan buat *pull request* atau laporkan *issue* jika menemukan *bug*.
+
+## Dukungan & Investasi
+Jika Anda tertarik untuk mendukung pengembangan **NdangFit**, baik sebagai pengguna, investor, maupun donatur, kontribusi Anda akan sangat berarti dalam mempercepat perkembangan aplikasi ini.  
+
+🔗 Donasi dapat dilakukan melalui:  
+[**Saweria - kazed05**](https://saweria.co/kazed05)  

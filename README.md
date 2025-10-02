@@ -70,3 +70,12 @@ Jika Anda tertarik untuk mendukung pengembangan **NdangFit**, baik sebagai pengg
 
 🔗 Donasi dapat dilakukan melalui:  
 [**Saweria - kazed05**](https://saweria.co/kazed05)  
+
+---
+
+## Demo Video
+Untuk melihat bagaimana cara kerja aplikasi **NdangFit**, silakan tonton video demo berikut:  
+
+[Demo NdangFit di YouTube](https://youtu.be/TY4OvlGPNkI?si=inMUDEEstV6KqxAK)
+
+---
